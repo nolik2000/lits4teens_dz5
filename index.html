@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Anastasia Kostiv</title>
+  <meta charset="utf-8">
+
+  <script>
+  var max = 10;
+  var min = 1;
+
+  var inputNumbers = [];
+  for (var a = 0; a < 3; a++){
+    inputNumbers[a] = parseInt(prompt('Enter a number from 1 to 10'));
+  }
+  var Numbers = [];
+  for (var a = 0; a < 3; a++){
+    Numbers[a] = Math.round(Math.random() * (max - min + 1)) + min;
+  }
+
+
+//    for(var a = 0; a < 3; a++){
+  //      for(var j = 0; j < 3; j++){
+            if (inputNumbers[0] == Numbers[0] && inputNumbers[1] == Numbers[1] && inputNumbers[2] == Numbers[2]){
+               console.log('Coincidences between the three numbers');
+            }else
+            if (inputNumbers[0] == Numbers[0] && inputNumbers[1] == Numbers[1] ||
+                inputNumbers[0] == Numbers[0] && inputNumbers[1] == Numbers[1] ||
+                inputNumbers[1] == Numbers[1] && inputNumbers[2] == Numbers[2]) {
+                console.log('Coincidences between the two numbers');
+            }else
+            if (inputNumbers[0] == Numbers[0] || inputNumbers[1] == Numbers[1] || inputNumbers[2] == Numbers[2]){
+                console.log('The coincidence of а one number');
+            }
+
+      //  }
+    //}
+
+
+
+  </script>
+
+  </script>
+</head>
+
+<body>
+</body>
+</html>
